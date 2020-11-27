@@ -4,6 +4,7 @@ number_of_courses = int(input('Enter the number of subjects offered: '))
 course = []
 grade = []
 units = []
+grade_point = []
 
 # values for each grade
 A = 5
@@ -13,7 +14,6 @@ D = 2
 E = 1
 F = 0
 
-total_units = sum(units)
 
 # collect the users input(course, unit, grade)
 def collect():
@@ -59,7 +59,15 @@ def result():
             score = F * units
     
         total_score = sum(score)
+        total_units = sum(units)
+
         gpa = total_score / total_units
+        grade_point.append(gpa)
         print(gpa)
+        
 
 collect()
+
+# divids the total grade_point by the number_of_courses
+cgpa = sum(grade_point) / number_of_courses
+print(cgpa)
