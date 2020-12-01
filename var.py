@@ -1,3 +1,8 @@
+# collects student details
+name = input('Enter student name: ')
+level = input('Enter level: ')
+department = input('Enter your department: ')
+
 # collect number of subjects offered 
 number_of_courses = int(input('Enter the number of subjects offered: '))
 
